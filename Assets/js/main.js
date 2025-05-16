@@ -152,7 +152,7 @@ function save() {
                 SUCCESS!
             </p>
             <p style="font-size: 18px; margin: 0;">
-                Your Comment has been Submitted Successfully!... <br> 
+                Your Comment has been Submitted Successfully!<br> 
                 Thank You for Your Comment!
             </p>
             <button onclick="this.parentElement.remove()" style="
@@ -184,7 +184,7 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 300,
-    reset: true, //Animation repeat
+    reset: true,
 })
 
 sr.reveal(`.home__bg`, {scale: 1.1, opacity: 1})
@@ -193,10 +193,9 @@ sr.reveal(`.home__data`, {origin: 'bottom', distance: '120px', delay: 1600})
 sr.reveal(`.swiper-pagination-bullet`, {origin: 'top', delay: 1800, opacity: 0})
 sr.reveal(`.home__button`, {origin: 'top', delay: 2200})
 
-sr.reveal(`.about__title, about__title span`, {origin: 'top', delay: 600})
-sr.reveal(`.about__description`, {origin: 'left', delay: 800})
-sr.reveal(`.button__ghost`, {origin: 'bottom'})
+sr.reveal(`.about__data`, {origin: 'left'})
 sr.reveal(`.about__video`, {origin: 'right'})
+sr.reveal(`.button__ghost`, {origin: 'bottom'})
 
 sr.reveal(`.models__title`, {origin: 'top'})
 sr.reveal(`.models__card`, {interval: 100, delay : 200})
@@ -205,7 +204,7 @@ sr.reveal(`.info_subtitle`, {origin: 'top'})
 sr.reveal(`.info__title`, {origin: 'top'})
 sr.reveal(`.info__img`, {distance: '120px'})
 sr.reveal(`.info__number`, {origin: 'bottom', distance: '80px', delay: 800})
-sr.reveal(`.info__group`, {interval: 100, delay: 150})
+sr.reveal(`.info__group`, {interval: 100, delay: 800})
 sr.reveal(`..info__data > *:not(:last-child)`, {interval: 100, delay: 150})
 
 
@@ -215,6 +214,5 @@ sr.reveal(`.contact__img`, {origin: 'right'})
 sr.reveal(`.contact__button`, {origin: 'bottom'})
 
 sr.reveal(`.footer__container`, {interval: 100})
-
 
 
