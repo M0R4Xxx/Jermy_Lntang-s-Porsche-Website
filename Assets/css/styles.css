@@ -468,8 +468,8 @@ video {
 .about__description {
     margin-bottom: 2.5rem;
     color : var(--white-color);
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .about__video {
@@ -815,6 +815,10 @@ video {
         height: 250px;
     }
 
+    .about__description {
+        font-size: var(--small-font-size);
+    }
+
     .models__container {
         grid-template-columns: 200px;
     }
@@ -861,10 +865,6 @@ video {
 
 /*For medium devices*/
 @media screen and (min-width: 576px) {
-    .about__container {
-        justify-content: center;
-    }
-
     .contact__container {
         justify-content: center;
         grid-template-columns: 100%;
@@ -891,8 +891,9 @@ video {
     }
 
     .about__description {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        font-size: var(--normal-font-size);
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
     }
 
     .info__data {
@@ -954,6 +955,10 @@ video {
 }
 
 @media screen and (min-width: 760px) {
+    .about__video {
+        width: 500px;
+        height: 320px;
+    }
 
     .models__container {
         grid-template-columns: repeat(2, 250px);
@@ -1186,6 +1191,6 @@ video {
 /*For 2k resolutions (2048 x 1152, 2048 x 1536*/
 @media screen and (min-width: 2048px) {
     body {
-        zoom: 1.4;
+        zoom: 1.1.1;
     }
 }
